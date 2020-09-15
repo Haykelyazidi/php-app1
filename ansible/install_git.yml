@@ -1,0 +1,11 @@
+---
+  - name: "DevOps Project"
+    hosts: nodes
+    #    connection: local
+    tasks:
+    - name: "Install Git"
+      apt:
+        name: ["git"]
+        state: present
+      register: "output"
+    - debug: var=output.stdout_lines

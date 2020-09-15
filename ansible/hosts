@@ -1,0 +1,7 @@
+[nodes:vars]
+ansible_connection=ssh
+ansible_ssh_user=root
+ansible_ssh_private_key=/var/lib/jenkins/.ssh/id_rsa
+
+[nodes]
+192.168.2.16
