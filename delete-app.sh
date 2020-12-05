@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Remove Existing Docker PHP App"
 for i in `docker ps -a| grep edureka-app|awk '{print $1}'`
 do 
