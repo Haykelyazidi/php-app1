@@ -1,4 +1,3 @@
-FROM php:7.0-apache
-RUN apt-get update -y
+FROM php:7.4-cli
 COPY app/website /var/www/HTML
 CMD apachectl -D FOREGROUND
